@@ -1,0 +1,83 @@
+_dataset:
+  class: Kaneshiro2015
+  code: Kaneshiro2015
+  doi: 10.1371/journal.pone.0135697
+  interval:
+  - 0
+  - 0.496
+  n_subjects: 10
+  paradigm: p300
+acquisition:
+  channel_types:
+    eeg: 124
+  hardware: EGI Net Amps 300
+  line_freq: 60.0
+  montage: GSN-HydroCel-128
+  n_channels: 124
+  reference: average
+  sampling_rate: 62.5
+  sensor_type: HydroCel Geodesic Sensor Net
+data_processed: true
+data_structure:
+  n_trials: 5184
+  trials_context: per subject (72 images x 72 repetitions)
+documentation:
+  country: US
+  data_url: https://purl.stanford.edu/bq914sc3730
+  doi: 10.1371/journal.pone.0135697
+  institution: Stanford University
+  investigators:
+  - Blair Kaneshiro
+  - Marcos Perreau Guimaraes
+  - Hyung-Suk Kim
+  - Anthony M. Norcia
+  - Patrick Suppes
+  license: CC-BY-3.0
+  publication_year: 2015
+experiment:
+  class_labels:
+  - human_body
+  - human_face
+  - animal_body
+  - animal_face
+  - fruit_vegetable
+  - inanimate_object
+  events:
+    animal_body: 3
+    animal_face: 4
+    fruit_vegetable: 5
+    human_body: 1
+    human_face: 2
+    inanimate_object: 6
+  feedback_type: none
+  mode: offline
+  n_classes: 6
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: photograph
+  study_design: Visual object recognition; 72 images from 6 categories; 500 ms presentation, 750 ms ISI
+  trial_duration: 0.496
+file_format: MATLAB
+participants:
+  age_max: 57
+  age_min: 21
+  gender:
+    female: 3
+    male: 7
+  handedness:
+    left: 1
+    right: 9
+  health_status: healthy
+  n_subjects: 10
+  species: human
+runs_per_session: 1
+sessions_per_subject: 1
+tags:
+  modality:
+  - ERP
+  pathology:
+  - Healthy
+  type:
+  - Visual ERP

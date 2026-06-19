@@ -1,0 +1,35 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"human_body": "Sensory-event, (Label/human_body)",
+			"human_face": "Sensory-event, (Label/human_face)",
+			"animal_body": "Sensory-event, (Label/animal_body)",
+			"animal_face": "Sensory-event, (Label/animal_face)",
+			"fruit_vegetable": "Sensory-event, (Label/fruit_vegetable)",
+			"inanimate_object": "Sensory-event, (Label/inanimate_object)"
+		}
+	},
+	"Description": "Event annotations for p300 task (animal_body, animal_face, fruit_vegetable, human_body, human_face, inanimate_object).",
+	"StimulusPresentation": {
+		"StimulusType": "photograph",
+		"StimulusModalities": [
+			"visual"
+		],
+		"PrimaryModality": "visual"
+	}
+}
