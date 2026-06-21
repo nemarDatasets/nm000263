@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Visual object ERP EEG dataset (Kaneshiro et al. 2015)",
+  "description": "A preprocessed visual object recognition EEG dataset containing event-related potentials (ERPs) from 10 healthy participants viewing photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects). The dataset comprises 5,184 trials recorded at 62.5 Hz using a 124-channel geodesic sensor net. This is a derivative version of the original Kaneshiro et al. (2015) dataset, prepared by MOABB (Mother of All BCI Benchmarks) for standardized benchmarking purposes. The preprocessed data is suitable for studying neural responses to visual object categorization and representational similarity analysis.",
+  "methods_description": "EEG data were acquired using an EGI Net Amps 300 amplifier with a 128-channel GSN-HydroCel Geodesic Sensor Net montage (124 channels analyzed) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 images from 6 object categories, each presented for 500 ms with a 750 ms inter-stimulus interval. Each image was repeated 72 times per subject, yielding 5,184 total trials. Data were preprocessed and are provided in MATLAB format.",
+  "license": "CC-BY-3.0",
+  "dataset_type": "derivative",
   "authors": {
     "Blair Kaneshiro": {},
     "Marcos Perreau Guimaraes": {},
@@ -8,6 +13,29 @@
     "Anthony M. Norcia": {},
     "Patrick Suppes": {}
   },
+  "keywords": [
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "event-related potentials",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "P300",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "visual object recognition"
+    },
+    {
+      "term": "representational similarity analysis"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1371/journal.pone.0135697",
@@ -35,45 +63,21 @@
       "relation_type": "References"
     }
   ],
-  "title": "Kaneshiro2015",
-  "license": "CC-BY-3.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "491.5 MB (11 files)"
   ],
   "formats": [
     ".edf",
     ".json",
+    ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "A visual event-related potential (ERP) dataset comprising 124-channel EEG recordings from 10 healthy participants viewing photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects). The dataset contains 5,184 trials collected during a visual object recognition task with 72 images per category, each presented for 500 ms with a 750 ms interstimulus interval. Data were acquired at 62.5 Hz using a high-density geodesic sensor net and are suitable for investigating neural representations of object categories through single-trial EEG classification and representational similarity analysis.",
-  "methods_description": "EEG data were acquired from 10 healthy participants using a 124-channel EGI Net Amps 300 system with HydroCel Geodesic Sensor Net montage (GSN-HydroCel-128) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 photographs from six object categories presented for 500 ms each with a 750 ms interstimulus interval. Data were preprocessed and organized in BIDS format.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "visual object recognition"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "representational similarity analysis"
-    }
-  ],
-  "source_hash": "f6ad82fd4a2d608486de31cd3b5f8d1cb25e16250e2ae11f617d8839d4bdb5bf"
+  "source_hash": "7489f0d10b877d9b4d9bb94154c2a0ee65ac9570fbc39d847397a0f2bdc3ed1f"
 }
