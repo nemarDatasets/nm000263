@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Visual object ERP EEG dataset (Kaneshiro et al. 2015)",
-  "description": "A preprocessed visual object recognition EEG dataset containing event-related potentials (ERPs) from 10 healthy participants viewing photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects). The dataset comprises 5,184 trials recorded at 62.5 Hz using a 124-channel geodesic sensor net. This is a derivative version of the original Kaneshiro et al. (2015) dataset, prepared by MOABB (Mother of All BCI Benchmarks) for standardized benchmarking purposes. The preprocessed data is suitable for studying neural responses to visual object categorization and representational similarity analysis.",
-  "methods_description": "EEG data were acquired using an EGI Net Amps 300 amplifier with a 128-channel GSN-HydroCel Geodesic Sensor Net montage (124 channels analyzed) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 images from 6 object categories, each presented for 500 ms with a 750 ms inter-stimulus interval. Each image was repeated 72 times per subject, yielding 5,184 total trials. Data were preprocessed and are provided in MATLAB format.",
+  "description": "A high-density 124-channel EEG dataset comprising event-related potentials (ERPs) from 10 healthy participants during a visual object recognition task. Participants viewed 5,184 trials of photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects) with 72 unique images per category, each presented for 500 ms. The dataset is suitable for investigating neural representations of object categories through single-trial EEG classification and representational similarity analysis.",
+  "methods_description": "EEG data were acquired from 10 healthy participants using a 124-channel EGI Net Amps 300 system with HydroCel Geodesic Sensor Net montage (GSN-HydroCel-128) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 photographs from each of six object categories (432 total unique images, presented across 5,184 trials) for 500 ms each with a 750 ms interstimulus interval.",
   "license": "CC-BY-3.0",
   "dataset_type": "derivative",
   "authors": {
@@ -15,25 +15,31 @@
   },
   "keywords": [
     {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "EEG"
     },
     {
-      "term": "event-related potentials",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "P300",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "event-related potentials"
     },
     {
       "term": "visual object recognition"
     },
     {
+      "term": "single-trial classification"
+    },
+    {
       "term": "representational similarity analysis"
+    },
+    {
+      "term": "high-density EEG"
+    },
+    {
+      "term": "geodesic sensor net"
+    },
+    {
+      "term": "healthy participants"
+    },
+    {
+      "term": "P300"
     }
   ],
   "related_identifiers": [
@@ -79,5 +85,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "7489f0d10b877d9b4d9bb94154c2a0ee65ac9570fbc39d847397a0f2bdc3ed1f"
+  "source_hash": "cefe6549c132d340f8f6b78288290569455ba8c96af07148372b4c03d5d8e7b7"
 }
