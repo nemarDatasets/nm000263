@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Visual object ERP EEG dataset (Kaneshiro et al. 2015)",
-  "description": "A high-density 124-channel EEG dataset comprising event-related potentials (ERPs) from 10 healthy participants during a visual object recognition task. Participants viewed 72 unique photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects), each presented for 500 ms with a 750 ms interstimulus interval, for a total of 5,184 trials. The dataset, acquired at 62.5 Hz using a geodesic sensor net, is suitable for investigating neural representations of object categories through single-trial EEG classification and representational similarity analysis.",
-  "methods_description": "EEG data were acquired from 10 healthy participants using a 124-channel EGI Net Amps 300 system with HydroCel Geodesic Sensor Net montage (GSN-HydroCel-128) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 photographs from six object categories presented for 500 ms each with a 750 ms interstimulus interval.",
+  "description": "A high-density 124-channel EEG dataset comprising event-related potentials (ERPs) from 10 healthy participants during a visual object recognition task. Participants viewed 5,184 photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects), with 72 images per category, each presented for 500 ms with a 750 ms interstimulus interval. This BIDS-formatted derivative dataset was converted from the original source data described in Kaneshiro et al. 2015 using the MOABB pipeline. The dataset is suitable for investigating neural representations of object categories through single-trial EEG classification and representational similarity analysis.",
+  "methods_description": "EEG data were acquired from 10 healthy participants using a 124-channel EGI Net Amps 300 system with HydroCel Geodesic Sensor Net montage (GSN-HydroCel-128) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 photographs per category from six object categories presented for 500 ms each with a 750 ms interstimulus interval. Data were preprocessed and converted to BIDS format using the MOABB (Mother of All BCI Benchmarks) pipeline.",
   "license": "CC-BY-3.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,9 +21,6 @@
       "term": "event-related potentials"
     },
     {
-      "term": "P300"
-    },
-    {
       "term": "visual object recognition"
     },
     {
@@ -33,16 +30,25 @@
       "term": "representational similarity analysis"
     },
     {
+      "term": "object categorization"
+    },
+    {
+      "term": "neural representation"
+    },
+    {
+      "term": "geodesic sensor net"
+    },
+    {
+      "term": "Healthy"
+    },
+    {
       "term": "Visual ERP"
     },
     {
-      "term": "object recognition"
-    },
-    {
-      "term": "high-density EEG"
-    },
-    {
       "term": "MOABB"
+    },
+    {
+      "term": "benchmark dataset"
     }
   ],
   "related_identifiers": [
@@ -72,6 +78,22 @@
       "relation_type": "IsDescribedBy"
     }
   ],
+  "funding_references": [
+    {
+      "funder_name": "Not specified"
+    },
+    {
+      "funder_name": "No funding information available"
+    },
+    {
+      "funder_name": "National Institutes of Health",
+      "award_number": "R01-MH087450"
+    },
+    {
+      "funder_name": "National Science Foundation",
+      "award_number": "BCS-1228261"
+    }
+  ],
   "resource_type_general": "Dataset",
   "resource_type_specific": "EEG Dataset",
   "modalities": [
@@ -89,10 +111,5 @@
     ".yaml",
     ".yml"
   ],
-  "funding_references": [
-    {
-      "funder_name": "Not specified"
-    }
-  ],
-  "source_hash": "d36d70d241147680c150ca717781eb7f098570a64b3b163e07b7b89cb618623e"
+  "source_hash": "828c0ee2ed2b589419d5e3e6f67acf4102b863a7756dea50d28b252f3601e1fd"
 }
