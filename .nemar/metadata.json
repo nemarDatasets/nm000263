@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Visual object ERP EEG dataset (Kaneshiro et al. 2015)",
-  "description": "A high-density 124-channel EEG dataset comprising event-related potentials (ERPs) from 10 healthy participants during a visual object recognition task. Participants viewed 5,184 photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, and inanimate objects), with 72 images per category, each presented for 500 ms with a 750 ms interstimulus interval. This BIDS-formatted derivative dataset was converted from the original source data described in Kaneshiro et al. 2015 using the MOABB pipeline. The dataset is suitable for investigating neural representations of object categories through single-trial EEG classification and representational similarity analysis.",
-  "methods_description": "EEG data were acquired from 10 healthy participants using a 124-channel EGI Net Amps 300 system with HydroCel Geodesic Sensor Net montage (GSN-HydroCel-128) at a sampling rate of 62.5 Hz with average reference. Participants viewed 72 photographs per category from six object categories presented for 500 ms each with a 750 ms interstimulus interval. Data were preprocessed and converted to BIDS format using the MOABB (Mother of All BCI Benchmarks) pipeline.",
+  "description": "A visual event-related potential dataset of 124-channel EEG recorded from 10 healthy participants viewing photographs from six object categories (human body, human face, animal body, animal face, fruit/vegetable, inanimate object). It contains 5,184 trials, with 72 images per category shown for 500 ms with a 750 ms interstimulus interval. The data support research on neural object representations through single-trial EEG classification and representational similarity analysis, and are distributed in BIDS format via MOABB.",
+  "methods_description": "EEG was acquired with a 124-channel EGI Net Amps 300 system and HydroCel Geodesic Sensor Net (GSN-HydroCel-128), sampled at 62.5 Hz with average reference. Participants viewed 72 photographs per category from six object categories, each shown for 500 ms with a 750 ms interstimulus interval. Data were preprocessed and organized in BIDS format.",
   "license": "CC-BY-3.0",
   "dataset_type": "derivative",
   "authors": {
@@ -24,31 +24,13 @@
       "term": "visual object recognition"
     },
     {
+      "term": "P300"
+    },
+    {
       "term": "single-trial classification"
     },
     {
       "term": "representational similarity analysis"
-    },
-    {
-      "term": "object categorization"
-    },
-    {
-      "term": "neural representation"
-    },
-    {
-      "term": "geodesic sensor net"
-    },
-    {
-      "term": "Healthy"
-    },
-    {
-      "term": "Visual ERP"
-    },
-    {
-      "term": "MOABB"
-    },
-    {
-      "term": "benchmark dataset"
     }
   ],
   "related_identifiers": [
@@ -61,16 +43,6 @@
       "identifier": "https://github.com/nemarDatasets/nm000263",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.21105/joss.01896",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "10.1038/s41597-019-0104-8",
-      "identifier_type": "DOI",
-      "relation_type": "References"
     },
     {
       "identifier": "https://nemar.org/dataset/nm000263",
@@ -100,7 +72,7 @@
     "eeg"
   ],
   "sizes": [
-    "3.7 GB (21 files)"
+    "3.40 GB (21 files)"
   ],
   "formats": [
     ".edf",
